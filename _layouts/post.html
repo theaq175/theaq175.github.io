@@ -1,37 +1,45 @@
 <!DOCTYPE html>
 <html>
   <head>
-    
+
     <title>{{ page.title }}</title>
-    
+
     <link rel="stylesheet" type="text/css" href="/css/main.css">
-    
+
   </head>
 
   <body>
 
     <header>
-        
-      <p>Navigation here</p>
-        
-      <h1>{{ page.title }}</h1>
-      
-      <p>{{ page.date | date: "%B %-d %Y"}}</p> 
-        
+
+      <nav>
+
+        <p>Navigation here</p>
+
+      </nav>
+
+      <div class="post-info">
+
+        <h1>{{ page.title }}</h1>
+
+        <p>{{ page.date | date: "%B %-d %Y"}}</p>
+
+      </div>
+
     </header>
-    
+
     <section>
 
       {{ content }}
 
     </section>
-  
+
     <footer>
-      
+
       <p>Footer</p>
-      
+
     </footer>
-    
+
   </body>
 
 </html>
