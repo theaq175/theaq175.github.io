@@ -9,7 +9,7 @@ body {
 header {
     background-image: url('../images/gradient-2.png');
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: auto;
     color: white;
     text-align: center;
 }
@@ -17,7 +17,6 @@ header {
 section {
     width: 50%;
     color: #111;
-    max-width: 655px;
 }
 
 footer {
