@@ -8,9 +8,18 @@ body {
 }
 
 header {
-    height: 351px;
-    text-align: center;
-    background: #f7fbfb;
+    position: relative;
+    z-index: 7;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    -webkit-tap-highlight-color: transparent;
+    transition: opacity .2s ease;
 }
 
 section {
