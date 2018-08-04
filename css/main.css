@@ -12,22 +12,14 @@ header, section, footer {
 }
 
 header {
-    position: relative;
-    z-index: 7;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
     height: 55px;
     display: flex;
     align-items: center;
-    background: #fff;
-    -webkit-tap-highlight-color: transparent;
-    transition: opacity .2s ease;
+    background: #f7fbfb;
 }
 
 section {
-    width: 70%;
+    width: 50%;
     color: #111;
     max-width: 655px;
     padding: 0 25px;
