@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Post test"
+title: "Post title"
 date: 2018-08-03
 ---
 
-Test
+Post content
