@@ -1,35 +1,32 @@
 <!DOCTYPE html>
 <html>
   <head>
+    
     <title>{{ page.title }}</title>
     
     <link rel="stylesheet" type="text/css" href="/css/main.css">
-  
+    
   </head>
 
   <body>
 
-  <header>
+    <header>
+      
+      <h1>{{ page.title }}</h1>
+      
+      <p class="meta">{{ page.date | date: "%B %-d %Y"}}</p> 
+      
+    </header>
     
-    <h1>{{ page.title }}</h1>
-    <p class="meta">{{ page.date | date: "%B %-d %Y"}}</p>
-    
-  </header>
-    
-<div class="container">
+    <div class="container">
 
-  {{ content }}
+      {{ content }}
 
-</div>
+    </div>
   
-  <footer>
+    <footer>
     
-   <ul>
-   <li><a href="mailto:hankquinlanhub@gmail.com">email</a></li>
-   <li><a href="https://github.com/hankquinlan">github.com/hankquinlan</a></li>
-   </ul>
-    
-  </footer>
+    </footer>
     
   </body>
 
