@@ -13,7 +13,7 @@ header {
 header.div {
     height: 55px;
     display: flex;
-    align-items: center;
+    text-align: center;
     background: #f7fbfb;
 }
 
