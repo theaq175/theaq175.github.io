@@ -7,11 +7,11 @@ body {
 
 }
 
-header, section, footer {
-    display: block;
+header {
+    height: 382px;
 }
 
-header {
+header.div {
     height: 55px;
     display: flex;
     align-items: center;
