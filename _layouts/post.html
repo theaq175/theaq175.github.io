@@ -10,35 +10,49 @@
 
   <body>
 
-    <header>
+    <div class="body-container">
 
-      <nav>
+      <div class="header-container">
 
-        <p>Navigation here</p>
+        <div class="Nav">
 
-      </nav>
+          <p>Navigation here</p>
 
-      <div class="post-info">
+        </div>
 
-        <h1>{{ page.title }}</h1>
+        <div class="Title">
 
-        <p>{{ page.date | date: "%B %-d %Y"}}</p>
+          <h1>{{ page.title }}</h1>
+
+          <p>{{ page.date | date: "%B %-d %Y"}}</p>
+
+        </div>
 
       </div>
 
-    </header>
+      <div class="content-container">
 
-    <section>
+        <div class="Post">
 
-      {{ content }}
+          {{ content }}
 
-    </section>
+        </div>
 
-    <footer>
+        <div class="Tags">
 
-      <p>Footer</p>
+          <p>Tags here</p>
 
-    </footer>
+        </div>
+
+      </div>
+
+      <div class="footer-container">
+
+          <p>Footer here</p>
+
+      </div>
+
+    </div>
 
   </body>
 

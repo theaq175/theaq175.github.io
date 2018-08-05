@@ -8,45 +8,60 @@ body {
   text-align: center;
 }
 
-header {
-    background-image: url('../images/gradient-2.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
-    height: 50vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
+.body-container {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 30% 2fr 0.5fr;
+  grid-template-areas: "Header Header Header" "Content Content Content" "Footer Footer Footer";
 }
 
-header.img {
+.header-container {
+  grid-area: Header;
+  display: grid;
+  height: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 3.5fr;
+  grid-template-areas: "Nav Nav Nav" ". Title .";
+  background-image: url('../images/gradient-2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.header-container.img {
     --blur: 1px;
     --inset: 100px;
     filter: blur(var(--blur))
 }
 
-nav {
-    color: black;
-    align-self: flex-start;
-    position: absolute;
-    top: 0;
-    left: 0;
+.Nav {
+  grid-area: Nav;
 }
 
-.post-info {
-    text-align: center;
-    align-self: center;
+.Title {
+  grid-area: Title;
+  justify-content: center;
+  margin-top: 5%;
 }
 
-section {
-    margin-left: 25%;
-    margin-right: 25%;
-    color: #111;
-    text-align: center;
+.content-container {
+  grid-area: Content;
+  display: grid;
+  height: 100%;
+  grid-template-columns: 1fr;
+  grid-template-rows: 90% 10%;
+  grid-template-areas: "Post" "Tags";
 }
 
-footer {
-     background: #f7fbfb;
+.Post {
+  grid-area: Post;
+}
+
+.Tags {
+  grid-area: Tags;
+}
+
+.footer-container {
+  grid-area: Footer;
 }
