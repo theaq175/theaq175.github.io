@@ -14,19 +14,21 @@ body {
   grid-template-columns: 1fr;
   grid-template-rows: 50vh 2fr 0.5fr;
   grid-template-areas: "Header" "Content" "Footer";
+  justify-content: fill;
 }
 
 .header-container {
+  background-image: url('../images/gradient-2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
   grid-area: Header;
   display: grid;
   height: 100%;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 0.5fr 3.5fr;
   grid-template-areas: "Nav Nav Nav" ". Title .";
-  background-image: url('../images/gradient-2.png');
-  background-repeat: no-repeat;
-  background-size: cover;
   color: white;
+  justify-content: fill;
 }
 
 .Nav {
@@ -36,6 +38,17 @@ body {
 .Title {
   grid-area: Title;
   align-self: center;
+}
+
+.Name {
+    font-size: 4.4em;
+    line-height: 1.2em;
+    font-weight: 500;
+    margin: 0;
+    text-wrap: balanced;
+    color: #fff;
+    width: 100%;
+    display: block
 }
 
 .content-container {
@@ -49,10 +62,16 @@ body {
 
 .Post {
   grid-area: Post;
-  margin-left: 25%;
-  margin-right: 25%;
   color: #111;
   text-align: center;
+  display: table;
+  position: relative;
+  min-width: 25%;
+  max-width: 90%;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3%;
 }
 
 .Tags {
