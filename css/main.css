@@ -56,6 +56,10 @@ body {
 
 .Post {
   grid-area: Post;
+  margin-left: 25%;
+  margin-right: 25%;
+  color: #111;
+  text-align: center;
 }
 
 .Tags {
