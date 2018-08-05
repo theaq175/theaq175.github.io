@@ -11,9 +11,9 @@ body {
 .body-container {
   display: grid;
   height: 100%;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 50% 2fr 0.5fr;
-  grid-template-areas: "Header Header Header" "Content Content Content" "Footer Footer Footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: 50vh 2fr 0.5fr;
+  grid-template-areas: "Header" "Content" "Footer";
 }
 
 .header-container {
@@ -35,6 +35,7 @@ body {
 
 .Title {
   grid-area: Title;
+  align-self: center;
 }
 
 .content-container {
