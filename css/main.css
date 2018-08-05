@@ -12,7 +12,7 @@ body {
   display: grid;
   height: 100%;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 30% 2fr 0.5fr;
+  grid-template-rows: 50% 2fr 0.5fr;
   grid-template-areas: "Header Header Header" "Content Content Content" "Footer Footer Footer";
 }
 
@@ -29,20 +29,12 @@ body {
   color: white;
 }
 
-.header-container.img {
-    --blur: 1px;
-    --inset: 100px;
-    filter: blur(var(--blur))
-}
-
 .Nav {
   grid-area: Nav;
 }
 
 .Title {
   grid-area: Title;
-  justify-content: center;
-  margin-top: 5%;
 }
 
 .content-container {
