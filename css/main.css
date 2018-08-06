@@ -20,7 +20,7 @@ body {
 .header-container {
   background-image: url('../images/gradient-2.png');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
   grid-area: Header;
   display: grid;
   height: 100%;
